@@ -8,136 +8,58 @@
         <meta name="author" content="Jan Bote">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <style>
-            * {
-                margin: 0;
-                padding: 0;
-                box-sizing: border-box;
-            }
-
             body {
                 font-family: "Segoe UI", Arial, sans-serif;
-                background: #f4f6f9;
+                margin: 40px;
                 color: #2c3e50;
-                min-height: 100vh;
-                display: flex;
-                flex-direction: column;
             }
 
-            header {
-                background: #2c3e50;
-                color: #ffffff;
-                padding: 40px 20px;
-                text-align: center;
+            h1 {
+                margin-bottom: 24px;
             }
 
-            header h1 {
-                font-size: 2.2rem;
-                margin-bottom: 10px;
-            }
-
-            header p {
-                opacity: 0.8;
-            }
-
-            main {
-                flex: 1;
-                width: 100%;
-                max-width: 900px;
-                margin: 0 auto;
-                padding: 40px 20px;
-            }
-
-            h2 {
-                margin-bottom: 20px;
-                border-bottom: 3px solid #3498db;
-                padding-bottom: 8px;
-            }
-
-            .grid {
-                display: grid;
-                grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-                gap: 20px;
-            }
-
-            .card {
-                display: block;
-                background: #ffffff;
-                border-radius: 10px;
-                padding: 24px;
-                text-decoration: none;
-                color: inherit;
-                border-left: 5px solid #3498db;
-                box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
-                transition: transform 0.2s, box-shadow 0.2s;
-            }
-
-            .card:hover {
-                transform: translateY(-4px);
-                box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
-            }
-
-            .card h3 {
-                margin-bottom: 8px;
-                color: #2980b9;
-            }
-
-            .card p {
-                font-size: 0.95rem;
-                color: #555;
-            }
-
-            .card .folder {
-                font-size: 0.8rem;
-                color: #888;
-                margin-top: 12px;
-                display: block;
-                font-family: monospace;
-            }
-
-            footer {
-                background: #2c3e50;
-                color: #ffffff;
-                text-align: center;
+            .carpeta {
+                margin-bottom: 24px;
+                border: 1px solid #ccc;
+                border-radius: 6px;
                 padding: 16px;
-                font-size: 0.9rem;
+            }
+
+            .carpeta h2 {
+                margin-bottom: 12px;
+            }
+
+            .carpeta ul {
+                list-style: none;
+                padding-left: 16px;
+                border-left: 2px solid #3498db;
+            }
+
+            .carpeta li {
+                margin: 6px 0;
             }
         </style>
     </head>
     <body>
 
-        <header>
-            <h1>Activitats 373</h1>
-            <p>Recull d'exercicis - Jan Bote</p>
-        </header>
+        <h1>Activitats 373</h1>
 
-        <main>
-            <h2>Exercicis</h2>
-            <div class="grid">
+        <div class="carpeta">
+            <h2>Exercicis HTML</h2>
+            <ul>
+                <li><a href="Exercicis%20HTML/ex1.html">ex1.html</a></li>
+                <li><a href="Exercicis%20HTML/ex2.html">ex2.html</a></li>
+            </ul>
+        </div>
 
-                <a class="card" href="Exercicis%20HTML/ex1.html">
-                    <h3>Exercici 1</h3>
-                    <p>El meu projecte somiat: la base de la meva nova pàgina web.</p>
-                    <span class="folder">Exercicis HTML/ex1.html</span>
-                </a>
-
-                <a class="card" href="Exercicis%20HTML/ex2.html">
-                    <h3>Exercici 2 - CineParadís</h3>
-                    <p>Blog de cinema fantàstic amb articles, formulari de contacte i peu de pàgina.</p>
-                    <span class="folder">Exercicis HTML/ex2.html</span>
-                </a>
-
-                <a class="card" href="Exercici%20Horari/html/index.html">
-                    <h3>Exercici Horari</h3>
-                    <p>Horari setmanal de classe amb estils de color per assignatura.</p>
-                    <span class="folder">Exercici Horari/html/index.html</span>
-                </a>
-
-            </div>
-        </main>
-
-        <footer>
-            <p>&copy; 2026 Jan Bote - Activitats 373</p>
-        </footer>
+        <div class="carpeta">
+            <h2>Exercici Horari</h2>
+            <ul>
+                <li><a href="Exercici%20Horari/html/index.html">html/index.html</a></li>
+                <li><a href="Exercici%20Horari/css/style.css">css/style.css</a></li>
+                <li><a href="Exercici%20Horari/css/colors.css">css/colors.css</a></li>
+            </ul>
+        </div>
 
     </body>
 </html>
