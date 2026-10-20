@@ -1,0 +1,60 @@
+body {
+  margin: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  grid-template-rows: auto auto auto auto 1fr auto;
+  height: 100vh;
+}
+
+.ancho {
+  grid-column: 1 / 3;
+}
+
+.grid > * {
+  border: 1px solid black;
+  padding: 10px;
+  margin: 0;
+}
+
+.cabecera{ 
+    background: lightblue; 
+}
+
+.lista{ 
+    background: lightgreen; 
+}
+
+.elementos{ 
+    background: khaki; 
+}
+
+.titulo{ 
+    background: lightsalmon; 
+}
+
+.botones{ 
+    background: plum; 
+}
+
+.botones-dcha{ 
+    background: lightpink; 
+}
+
+.contenido{ 
+    background: lightyellow; 
+}
+
+aside{ 
+    background: lightgray; 
+}
+
+footer{ 
+    background: lightcyan; 
+}
